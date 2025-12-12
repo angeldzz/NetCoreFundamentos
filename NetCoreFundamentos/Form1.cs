@@ -22,7 +22,8 @@ namespace NetCoreFundamentos
             short numeroMenor = 1;
             int numeroMayor = numeroMenor;
             // no se puede hacer = short numeroMenor = numeroMayor;
-            
+            string numerostring = "999";
+            int numerostringparse = int.Parse(numerostring);
         }
     }
 }
