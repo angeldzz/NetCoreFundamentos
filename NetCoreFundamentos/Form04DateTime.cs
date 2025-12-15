@@ -13,7 +13,41 @@ namespace NetCoreFundamentos
         public Form04DateTime()
         {
             InitializeComponent();
+            this.txtFechaActual.Text = DateTime.Now.ToString();
+
         }
 
+        private void chkFormato_CheckedChanged(object sender, EventArgs e)
+        {
+            DateTime fecha = DateTime.Parse(this.txtFechaActual.Text);
+
+            if (this.chkFormato.Checked == true)
+            {
+                this.txtFechaActual.Text = fecha.ToLongDateString();
+            }
+            else
+            {
+                this.txtFechaActual.Text = fecha.ToShortDateString();
+            }
+        }
+
+        private void btnIncrementar_Click(object sender, EventArgs e)
+        {
+            int incremento = int.Parse(this.txtIncremento.Text);
+            DateTime fecha = DateTime.Parse(this.txtFechaActual.Text);
+            if (this.rdbDias.Checked)
+            {
+                fecha = fecha.AddDays(incremento);
+            }
+            else if (this.rdbMeses.Checked)
+            {
+                fecha = fecha.AddMonths(incremento);
+            }
+            else if (this.rdbAnyos.Checked)
+            {
+                fecha = fecha.AddYears(incremento);
+            }
+                this.txtFechaFinal.Text = fecha.ToString();
+        }
     }
 }

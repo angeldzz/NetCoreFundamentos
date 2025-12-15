@@ -66,6 +66,7 @@
             chkFormato.TabIndex = 2;
             chkFormato.Text = "cambiar Formato";
             chkFormato.UseVisualStyleBackColor = true;
+            chkFormato.CheckedChanged += chkFormato_CheckedChanged;
             // 
             // rdbDias
             // 
@@ -124,6 +125,7 @@
             btnIncrementar.TabIndex = 8;
             btnIncrementar.Text = "Incrementar";
             btnIncrementar.UseVisualStyleBackColor = true;
+            btnIncrementar.Click += btnIncrementar_Click;
             // 
             // label3
             // 
