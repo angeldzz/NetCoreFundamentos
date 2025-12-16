@@ -57,12 +57,15 @@ namespace NetCoreFundamentos
             // para las acciones sobre las colecciones siempre
             // con bucles contador
             // voy a utilizar el metodo RemoveAt pro lo que recorremos la coleccion SelectedIndices
-            for (int i = 0; i < this.lstElementos.SelectedIndices.Count; i++)
+            
+            int numElementos = this.lstElementos.SelectedIndices.Count - 1;
+            for (int i = numElementos; i >= 0; i--)
             {
-                int index = this.lstElementos.SelectedIndices[i];
-                //eliminamos los que estan en la posiccion seleccionada
-                this.lstElementos.Items.RemoveAt(index);
+                    int index = this.lstElementos.SelectedIndices[i];
+                    //eliminamos los que estan en la posiccion seleccionada
+                    this.lstElementos.Items.RemoveAt(index);
             }
         }
     }
 }
+
