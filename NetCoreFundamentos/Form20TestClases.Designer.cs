@@ -1,0 +1,96 @@
+﻿namespace NetCoreFundamentos
+{
+    partial class Form20TestClases
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            label1 = new Label();
+            lstClases = new ListBox();
+            btnCrearPersona = new Button();
+            btnCrearEmpleado = new Button();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(12, 6);
+            label1.Name = "label1";
+            label1.Size = new Size(37, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Datos";
+            // 
+            // lstClases
+            // 
+            lstClases.FormattingEnabled = true;
+            lstClases.Location = new Point(12, 24);
+            lstClases.Name = "lstClases";
+            lstClases.Size = new Size(635, 304);
+            lstClases.TabIndex = 1;
+            // 
+            // btnCrearPersona
+            // 
+            btnCrearPersona.Location = new Point(12, 334);
+            btnCrearPersona.Name = "btnCrearPersona";
+            btnCrearPersona.Size = new Size(108, 23);
+            btnCrearPersona.TabIndex = 2;
+            btnCrearPersona.Text = "Crear Persona";
+            btnCrearPersona.UseVisualStyleBackColor = true;
+            btnCrearPersona.Click += btnCrearPersona_Click;
+            // 
+            // btnCrearEmpleado
+            // 
+            btnCrearEmpleado.Location = new Point(138, 334);
+            btnCrearEmpleado.Name = "btnCrearEmpleado";
+            btnCrearEmpleado.Size = new Size(108, 23);
+            btnCrearEmpleado.TabIndex = 3;
+            btnCrearEmpleado.Text = "Crear Empleado";
+            btnCrearEmpleado.UseVisualStyleBackColor = true;
+            btnCrearEmpleado.Click += btnCrearEmpleado_Click;
+            // 
+            // Form20TestClases
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(659, 450);
+            Controls.Add(btnCrearEmpleado);
+            Controls.Add(btnCrearPersona);
+            Controls.Add(lstClases);
+            Controls.Add(label1);
+            Name = "Form20TestClases";
+            Text = "Form20TestClases";
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private Label label1;
+        private ListBox lstClases;
+        private Button btnCrearPersona;
+        private Button btnCrearEmpleado;
+    }
+}
