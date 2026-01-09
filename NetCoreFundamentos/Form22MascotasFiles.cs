@@ -54,11 +54,6 @@ namespace NetCoreFundamentos
             }
         }
 
-        private async void btnReadFile_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private async void btnReadFile_Click_1(object sender, EventArgs e)
         {
             await this.helper.ReadMascotaAsync();
